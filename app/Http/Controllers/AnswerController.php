@@ -37,9 +37,9 @@ class AnswerController extends Controller
         Result::create([
             'user_id'=>$request->session()->get('FRONT_USER_LOGIN'),
             'quiz_id'=>$request->quiz_id,
-            'quiz_score'=>$total,
-             'achieved_score'=>$correct,
-             'wrong_score' => $wrong
+            'quiz_score'=>$total, // total questions in the quiz
+             'achieved_score'=>$correct,// total questions in the quiz
+             'wrong_score' => $wrong // total questions in the quiz
          ]);
          return redirect()->route('results')->with('success','Quiz done and result published');
     }

@@ -46,6 +46,21 @@
 .mt{
   margin-bottom: 5%;
 }
+
+button.slick-next.slick-arrow {
+  color: red;
+  background: red;
+  position: absolute;
+  right: 47%;
+  top: 13rem;
+}
+
+button.slick-prev.slick-arrow {
+  color: red;background: red;
+  position: absolute;
+  left: 47%;
+  top: 13rem;
+}
 .alert-box{
 	position: absolute;
 	right:0;
